@@ -19,14 +19,12 @@ BuildRequires:	bes-devel >= 3.9.0
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	hdf5-devel >= 1.6
-BuildRequires:	hdf-eos-devel >= 2
 BuildRequires:	libdap-devel >= 3.11.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
 Requires:	bes >= 3.9.0
 Requires:	hdf5 >= 1.6
-Requires:	hdf-eos >= 2
 Requires:	libdap >= 3.11.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
