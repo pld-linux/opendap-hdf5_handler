@@ -41,9 +41,6 @@ oprogramowaniem DAP2 i dap-server.
 %prep
 %setup -q -n hdf5_handler-%{version}
 
-# don't use -L/usr/lib for hdfeos2
-%{__sed} -i -e '/LDFLAGS.*HDFEOS2_DIR/d' configure.ac
-
 %build
 # rebuild autotools for -as-needed to work
 %{__libtoolize}
@@ -51,9 +48,7 @@ oprogramowaniem DAP2 i dap-server.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure \
-	--with-cache-dir=/var/cache/bes \
-	--with-hdfeos2=/usr
+%configure
 %{__make}
 
 %{?with_tests:%{__make} check}
