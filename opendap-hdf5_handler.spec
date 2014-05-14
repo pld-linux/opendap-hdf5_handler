@@ -5,27 +5,27 @@
 Summary:	HDF5 data handler module for the OPeNDAP data server
 Summary(pl.UTF-8):	Moduł obsługujący dane HDF5 dla serwera danych OPeNDAP
 Name:		opendap-hdf5_handler
-Version:	2.2.1
+Version:	2.2.2
 Release:	1
 License:	LGPL v2.1+
 Group:		Daemons
 Source0:	http://www.opendap.org/pub/source/hdf5_handler-%{version}.tar.gz
-# Source0-md5:	d20371b73401244c2c65c3c27fbf53fe
+# Source0-md5:	dd97291a96c28c6b9398bd18453176f0
 URL:		http://opendap.org/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
-%{?with_tests:BuildRequires:	bes >= 3.9.0}
-BuildRequires:	bes-devel >= 3.9.0
+%{?with_tests:BuildRequires:	bes >= 3.13.0}
+BuildRequires:	bes-devel >= 3.13.0
 BuildRequires:	bison
-BuildRequires:	flex
+BuildRequires:	flex >= 2.5.35
 BuildRequires:	hdf5-devel >= 1.6
-BuildRequires:	libdap-devel >= 3.11.0
+BuildRequires:	libdap-devel >= 3.13.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
-Requires:	bes >= 3.9.0
+Requires:	bes >= 3.13.0
 Requires:	hdf5 >= 1.6
-Requires:	libdap >= 3.11.0
+Requires:	libdap >= 3.13.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
