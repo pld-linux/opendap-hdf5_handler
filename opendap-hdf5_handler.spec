@@ -6,7 +6,7 @@ Summary:	HDF5 data handler module for the OPeNDAP data server
 Summary(pl.UTF-8):	Moduł obsługujący dane HDF5 dla serwera danych OPeNDAP
 Name:		opendap-hdf5_handler
 Version:	2.2.3
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Daemons
 Source0:	http://www.opendap.org/pub/source/hdf5_handler-%{version}.tar.gz
