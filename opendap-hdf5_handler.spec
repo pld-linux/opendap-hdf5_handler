@@ -1,3 +1,4 @@
+# NOTE: for versions >= 2.3.2 see bes.spec
 #
 # Conditional build:
 %bcond_with	tests	# make check (requires BES server)
@@ -16,6 +17,7 @@ BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
 %{?with_tests:BuildRequires:	bes >= 3.13.0}
 BuildRequires:	bes-devel >= 3.13.0
+BuildRequires:	bes-devel < 3.14
 BuildRequires:	bison
 BuildRequires:	flex >= 2.5.35
 BuildRequires:	hdf5-devel >= 1.6
